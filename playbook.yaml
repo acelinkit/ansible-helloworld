@@ -1,0 +1,8 @@
+- name: "hello world play"
+  hosts: localhost
+  tasks:
+  - name: hello world to file
+    ansible.builtin.copy:
+      dest: "/tmp/helloworld"
+      content: |
+        this is my test file
